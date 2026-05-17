@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIET CSE iOS Club | Code. Create. Innovate.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="apple-logo-glow"><i class="fab fa-apple"></i></div>
+        <div class="loading-text">Initializing iOS Club...</div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fab fa-apple"></i> AIET <span>iOS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#timeline">Events</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1 class="gradient-text">Think Different.</h1>
+            <h1 class="gradient-text secondary">Code Better.</h1>
+            <p>Welcome to the AIET CSE iOS Club. We build the future of mobile experiences.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="#about" class="btn btn-secondary">Join Us</a>
+            </div>
+        </div>
+        <div class="iphone-mockup reveal delay-1">
+            <div class="screen">
+                <div class="dynamic-island"></div>
+                <div class="screen-content">
+                   <img src="logo1.png" alt="App Screenshot" class="screen-image">
+                    <h3>AIET CSE</h3>
+                    <p>Code. Create. Innovate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title reveal">Apple Ecosystem. <span class="gradient-text">Unlocked.</span></h2>
+        <div class="glass-grid">
+            <div class="glass-card tilt-card reveal">
+                <i class="fas fa-code"></i>
+                <h3>Swift UI</h3>
+                <p>Master modern declarative UI design for all Apple platforms.</p>
+            </div>
+            <div class="glass-card tilt-card reveal delay-1">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Development</h3>
+                <p>Build scalable, high-performance apps tailored for the iOS ecosystem.</p>
+            </div>
+            <div class="glass-card tilt-card reveal delay-2">
+                <i class="fas fa-rocket"></i>
+                <h3>Innovation</h3>
+                <p>Turn ideas into reality with hackathons and collaborative campus projects.</p>
+            </div>
+        </div>
+
+
+
+<section id="history" class="history">
+        <h2 class="section-title reveal">Lab <span class="gradient-text">Heritage</span></h2>
+        
+        <div class="glass-grid">
+            <div class="glass-card tilt-card reveal">
+                <i class="fab fa-apple"></i>
+                <h3>January 2015</h3>
+                <p>Apple iOS Lab established in AIET CSE Department with 29 Mac Mini systems and 1 Mac System.</p>
+            </div>
+            <div class="glass-card tilt-card reveal delay-1">
+                <i class="fas fa-memory"></i>
+                <h3>October 2023</h3>
+                <p>Upgraded infrastructure with 3 new Apple Mac mini systems featuring 16GB RAM.</p>
+            </div>
+            <div class="glass-card tilt-card reveal delay-2">
+                <i class="fas fa-desktop"></i>
+                <h3>January 2024</h3>
+                <p>Massive expansion with the purchase of 20 Apple iMac Systems featuring 16GB RAM.</p>
+            </div>
+        </div>
+
+        <div class="glass-card reveal delay-1" style="margin-top: 4rem; overflow-x: auto;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--neon-blue);">iOS App Development Training History</h3>
+            <table class="glass-table">
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Resource Person</th>
+                        <th>Affiliation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19-01-2026 To 15-05-2026</td>
+                        <td>Venkatesh (Training for CSE Students)</td>
+                        <td>Senior Associate Professor, CSE Dept, AIET</td>
+                    </tr>
+                    <tr>
+                        <td>24-07-2025 To 25-07-2025</td>
+                        <td>Venkatesh (Non-teaching faculty training)</td>
+                        <td>Senior Associate Professor, CSE Dept, AIET</td>
+                    </tr>
+                    <tr>
+                        <td>17-09-2024 To 06-12-2024</td>
+                        <td>Venkatesh (CSE Allied Branch Students)</td>
+                        <td>Senior Associate Professor, CSE Dept, AIET</td>
+                    </tr>
+                    <tr>
+                        <td>13-08-2024 To 24-08-2024</td>
+                        <td>Venkatesh (Alvas BCA Students)</td>
+                        <td>Senior Associate Professor, CSE Dept, AIET</td>
+                    </tr>
+                    <tr>
+                        <td>29-04-2024 To 25-07-2024</td>
+                        <td>Venkatesh (CSE Students)</td>
+                        <td>Senior Associate Professor, CSE Dept, AIET</td>
+                    </tr>
+                    <tr>
+                        <td>02-02-2024 To 24-02-2024</td>
+                        <td>Mr. Amith Gulati & Dr. Shashidhara H S</td>
+                        <td>Director at Codevarsity & Professor, MS Ramaiah IT (Apple Certified Trainers)</td>
+                    </tr>
+                    <tr>
+                        <td>22-11-2023 To 29-11-2023</td>
+                        <td>Mr. Maheshwaran Govindaraju</td>
+                        <td>Software Trainer- ETA. Galaxy Internet Pvt Ltd.</td>
+                    </tr>
+                    <tr>
+                        <td>16-07-2022 To 10-12-2022 (Saturdays)</td>
+                        <td>Mr. Mahesh Naik</td>
+                        <td>iOS Developer at ViaCom18, Bangalore</td>
+                    </tr>
+                    <tr>
+                        <td>18-10-2022 To 29-10-2022</td>
+                        <td>Mr. Mahesh Naik</td>
+                        <td>iOS Developer at ViaCom18, Bangalore</td>
+                    </tr>
+                    <tr>
+                        <td>23-10-2021 To 05-02-2022 (Saturdays)</td>
+                        <td>Mr. Mahesh Naik</td>
+                        <td>iOS Developer at ViaCom18, Bangalore</td>
+                    </tr>
+                    <tr>
+                        <td>06-02-2021 Onwards (Saturdays)</td>
+                        <td>Mr. Mahesh Naik</td>
+                        <td>iOS Developer at Robosoft Technologies Udupi</td>
+                    </tr>
+                    <tr>
+                        <td>24-02-2019 To 12-10-2020 (Multiple Batches)</td>
+                        <td>Mrs. Seema Nair</td>
+                        <td>Callibre Code Pvt.Ltd, Bangalore</td>
+                    </tr>
+                    <tr>
+                        <td>10-07-2018 To 05-10-2018 (Multiple Batches)</td>
+                        <td>Mrs. Seema Nair</td>
+                        <td>Callibre Code Pvt.Ltd, Bangalore</td>
+                    </tr>
+                    <tr>
+                        <td>01-08-2017 To 03-02-2018 (Multiple Batches)</td>
+                        <td>Mr. Sudeep Jha</td>
+                        <td>Monkfox Pvt. Ltd, Bangalore</td>
+                    </tr>
+                    <tr>
+                        <td>01-08-2016 To 16-08-2016</td>
+                        <td>Ms. Swathi Hebbar</td>
+                        <td>Dheemai Inc, Udupi</td>
+                    </tr>
+                    <tr>
+                        <td>14-01-2015 To 23-01-2015</td>
+                        <td>Mr. Arun Patavardhan</td>
+                        <td>Xcel Frameworks, Mumbai</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    </section>
+    <!-- Projects Section -->
+   <section id="projects" class="projects">
+        <h2 class="section-title reveal">Featured <span class="gradient-text">Innovations</span></h2>
+        <div class="project-grid">
+            
+            <div class="project-card reveal">
+                <div class="project-img" style="background-image: url('1.png');"></div>
+                <div class="project-info">
+                    <h3>Mergeo</h3>
+                    <p>A pure entertainment application to merge videos with your voice recordings and sync lip movements.</p>
+                    <a href="https://apps.apple.com/in/app/mergeo/id1438548443" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-1">
+                <div class="project-img" style="background-image: url('2.png');"></div>
+                <div class="project-info">
+                    <h3>Yoga Station</h3>
+                    <p>A genuine wellness app offering home activities and yogasanas to relieve stress, hypertension, and diabetes.</p>
+                    <a href="https://apps.apple.com/in/app/yogastation/id1439488896" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-2">
+                <div class="project-img" style="background-image: url('3.png');"></div>
+                <div class="project-info">
+                    <h3>Musical Express</h3>
+                    <p>Uses Apple's face recognition to detect your smile, playing music to match or boost your mood.</p>
+                    <a href="https://apps.apple.com/in/app/musicalexpress/id1438653274" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img" style="background-image: url('4.png');"></div>
+                <div class="project-info">
+                    <h3>Fitreat</h3>
+                    <p>An efficient app to outline your ideal diet plan by calculating vital stats like BMR, TDEE, and BMI.</p>
+                    <a href="https://apps.apple.com/in/app/fitreat/id1453315210" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-1">
+                <div class="project-img" style="background-image: url('5.png');"></div>
+                <div class="project-info">
+                    <h3>Childslate</h3>
+                    <p>A fun learning environment for toddlers to practice writing alphabets, numbers, and drawing pictures.</p>
+                    <a href="https://apps.apple.com/in/app/childslate/id1461671756" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-2">
+                <div class="project-img" style="background-image: url('6.png');"></div>
+                <div class="project-info">
+                    <h3>Twist Tac Toe</h3>
+                    <p>Tic-Tac-Toe with a twist! Features bonus mark chances and multiple grid combinations (3x3 and 4x4).</p>
+                    <a href="https://apps.apple.com/in/app/twist-tac-toe/id1461649998" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img" style="background-image: url('7.png');"></div>
+                <div class="project-info">
+                    <h3>Florahunt</h3>
+                    <p>Machine Learning supported app that identifies flowers around the world simply by snapping a photo.</p>
+                    <a href="https://apps.apple.com/in/app/florahunt/id1465949442" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-1">
+                <div class="project-img" style="background-image: url('8.png');"></div>
+                <div class="project-info">
+                    <h3>Alvas Shayari</h3>
+                    <p>Enlighten your day. Create, read, and upload your own Shayari with beautiful custom layouts.</p>
+                    <a href="https://apps.apple.com/in/app/Alvas%20Shayari/id1672094618" target="_blank" class="read-more">View on AppStore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+    <h2 class="section-title reveal">Our <span class="gradient-text">Journey</span></h2>
+    <div class="timeline">
+        
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+                <h3>Lab Establishment</h3>
+                <span>January 2015</span>
+                <p>The Apple iOS Lab was officially established in the AIET CSE Department, equipped with 29 Mac Mini systems and one Mac System.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+                <h3>Hardware Expansion</h3>
+                <span>October 2023</span>
+                <p>AIET enhanced the lab's capabilities by purchasing 3 additional Apple Mac Mini systems, each featuring 16GB of RAM.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+                <h3>Modernization Phase</h3>
+                <span>January 2024</span>
+                <p>A significant upgrade saw the addition of 20 high-performance Apple iMac Systems with 16GB RAM to support advanced development.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2 class="section-title reveal">Team <span class="gradient-text">Members</span></h2>
+        <div class="team-grid">
+            <div class="team-card glass-card tilt-card reveal">
+                <div class="avatar">
+                <img src="iranna.png" alt="Team Member" class="team-image">
+            </div>
+                <h3>Iranna M Warad</h3>
+                <p>Member</p>
+            </div>
+            <div class="team-card glass-card tilt-card reveal delay-1">
+                <div class="avatar">
+                <img src="Manju.jpeg" alt="Team Member" class="team-image">
+            </div>
+                <h3>Manju S Bhadrashetti</h3>
+                <p>Member</p>
+
+            </div>
+            <div class="team-card glass-card tilt-card reveal">
+                <div class="avatar">
+                <img src="Deepak.jpeg" alt="Team Member" class="team-image">
+            </div>
+                <h3>Deepak P Yaragatti</h3>
+                <p>Member</p>
+            </div>
+            <div class="team-card glass-card tilt-card reveal delay-1">
+                <div class="avatar">
+                <img src="Yash.png" alt="Team Member" class="team-image">
+                </div>
+                <h3>Yashwanth</h3>
+                <p>Member</p>
+            </div>
+            <div class="team-card glass-card tilt-card reveal delay-1">
+                <div class="avatar">
+                <img src="Clavin.jpeg" alt="Team Member" class="team-image">
+                </div>
+                <h3>Clavin</h3>
+                <p>Member</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="mentors" class="mentors">
+    <h2 class="section-title reveal">Faculty <span class="gradient-text">Leadership</span></h2>
+    
+    <div class="mentor-container">
+        <div class="mentor-card glass-card reveal">
+            <div class="mentor-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="mentor-details">
+                <span class="mentor-badge">Lead Trainer</span>
+                <h3>Mr. Venkatesh</h3>
+                <p class="mentor-role">Senior Associate Professor, CSE</p>
+                <p class="mentor-bio">Specializing in iOS development training for CSE.</p>
+            </div>
+        </div>
+
+        <div class="mentor-card glass-card reveal delay-1">
+            <div class="mentor-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="mentor-details">
+                <span class="mentor-badge">Strategic Mentor</span>
+                <h3>Dr. Manjunath Kotari</h3>
+                <p class="mentor-role">HOD-Department of CSE, AIET</p>
+                <p class="mentor-bio">Overseeing the Apple iOS Lab infrastructure and academic integration since its establishment in 2015.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer & QR Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>AIET <span>iOS Club</span></h2>
+                <p>Department of Computer Science & Engineering</p>
+            </div>
+            <div class="footer-qr glass-card">
+                <i class="fas fa-qrcode fa-4x"></i>
+                <p>Scan to Join</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AIET CSE iOS Club. Designed with precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
